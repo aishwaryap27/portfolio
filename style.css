@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* prevents side-scrolling */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0078ff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #1b1b1b, #3a3a3a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top:20px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.hero span {
+    color: #0078ff;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #0078ff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #005fcc;
+}
+
+.btn-secondary {
+    border: 2px solid #0078ff;
+    color: #0078ff;
+}
+
+.btn-secondary:hover {
+    background: #0078ff;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #fff;
+    font-weight: 600;
+    border-top: 1px solid #ddd;
+}
+.profile-img {
+    width: 100%;        /* take full width of container */
+    max-width: 200px;   /* prevents it from becoming too big */
+    height: 30%;       /* maintain aspect ratio */
+    border-radius: 10%; /* optional: make it circular */
+    display: block;
+    margin: auto;       /* center horizontally */
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 800px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav.navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none; /* hide nav links for now until mobile menu added */
+    }
+}
